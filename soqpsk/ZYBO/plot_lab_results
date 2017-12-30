@@ -1,0 +1,9 @@
+%%% plot_lab_results
+
+x = [-65.42 -66.25 -67.46 -68.06];
+y = [5.5e-5 4.37e-5 7.5e-3 4.13e-2];
+
+figure(99);
+semilogy(x,y); grid on;
+xlabel('input signal level (dBm)');
+ylabel('BER');

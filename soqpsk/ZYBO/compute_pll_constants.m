@@ -1,0 +1,43 @@
+%%% compute_pll_constants
+%%% BnTsp = closed loop bandwidth of phase PLL
+%%% BnTst = closed loop bandwidth of the timing PLL
+
+BnTsp = 0.05;
+BnTst = 0.02;
+
+%%% Phase PLL
+
+zetap = 0.7071;
+N = 2;
+kpp = 18.33;
+k0p = 1;
+temp = BnTsp/(zetap + 0.25/zetap);
+denom = 1 + 2*zetap/N*temp + temp*temp/(N*N);
+k0kpk1p = 4*zetap/N*temp/denom;
+k0kpk2p = 4*temp*temp/(N*N*denom);
+k1p = k0kpk1p/(kpp*k0p);
+k2p = k0kpk2p/(kpp*k0p);
+fprintf(1,'k1p = %g\n',k1p);
+fprintf(1,'k2p = %g\n',k2p);
+
+b0p = k1p + k2p;
+b1p = -k1p;
+
+%%% Timing PLL
+
+zetat = 1;
+N = 2;
+kpt = 12.35;
+k0t = -1;
+temp = BnTst/(zetat + 0.25/zetat);
+denom = 1 + 2*zetat/N*temp + temp*temp/(N*N);
+k0kpk1t = 4*zetat/N*temp/denom;
+k0kpk2t = 4*temp*temp/(N*N*denom);
+k1t = k0kpk1t/(kpt*k0t);
+k2t = k0kpk2t/(kpt*k0t);
+
+fprintf(1,'k1t = %g\n',k1t);
+fprintf(1,'k2t = %g\n',k2t);
+
+b0t = k1t + k2t;
+b1t = -k1t;
