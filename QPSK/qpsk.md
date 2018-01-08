@@ -1,0 +1,1 @@
+These are some examples of QPSK modulation and demodulation I did in Matlab. The qpsk_raw.m is my first implementation, while the qpsk_prog.m is my implementation that attempts to simulate the GNU Radio scheduler.
