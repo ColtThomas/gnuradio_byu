@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_224ceb66e5de01968c487bcf066b912e" kind="dir">
+    <compoundname>/usr/src/gnuradio/gnuradio/gr-TestA/include/TestA</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="cleanslate_8h">cleanslate.h</innerfile>
+    <innerfile refid="my__qpsk__demod__cb_8h">my_qpsk_demod_cb.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/usr/src/gnuradio/gnuradio/gr-TestA/include/TestA/"/>
+  </compounddef>
+</doxygen>

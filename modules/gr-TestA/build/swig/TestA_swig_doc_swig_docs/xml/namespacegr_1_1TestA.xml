@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacegr_1_1TestA" kind="namespace" language="C++">
+    <compoundname>gr::TestA</compoundname>
+    <innerclass refid="classgr_1_1TestA_1_1cleanslate" prot="public">gr::TestA::cleanslate</innerclass>
+    <innerclass refid="classgr_1_1TestA_1_1my__qpsk__demod__cb" prot="public">gr::TestA::my_qpsk_demod_cb</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/usr/src/gnuradio/gnuradio/gr-TestA/include/TestA/cleanslate.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>
