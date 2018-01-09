@@ -104,6 +104,10 @@ transmitOut = carrier_i+carrier_q;
 % real time) the buffer size will diminish to a size of 1 as you compute
 % your last input sample. Buffer sizes are always in powers of 2.
 
+% ERROR: the demodulator will correctly receive symbols, but the scheduler 
+% simulation mechanics scramble the received symbols. I would try rebuilding 
+% from scratch and use this as a reference.
+
 receive_i = zeros(1,length(transmitOut));
 receive_q = zeros(1,length(transmitOut));
 % bring back to baseband
